@@ -23,8 +23,16 @@ export default function Newsletter(){
             <h2>
               Encontre aqui uma vasta seleção de plantas para decorar a sua casa e torná-lo uma pessoa mais feliz no seu dia a dia. Entre com seu e-mail e assine nossa newsletter para saber das novidades da marca.
             </h2>
-            <div>
-              <input type="text" />
+            <div className={styles.newsletter__inputContainer}>
+              <div className={styles.newsletter__inputContent}>
+                <label htmlFor="newsletter-input">
+                  <img src="icons/mail.png" alt="ícone de email" />
+                </label>
+                <input type="email" id='newsletter-input' placeholder='Insira seu email'/>
+              </div>
+              <button>
+                Assinar newsletter
+              </button>
             </div>
           </div>
         </div>
