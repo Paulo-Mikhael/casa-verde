@@ -1,0 +1,49 @@
+.backgroundSection{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.backgroundSpot{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.backgroundPlant{
+  position: absolute;
+  top: 0;
+  right: 410px;
+}
+.newsletter{
+
+  &__container{
+    width: 1203px;
+    height: 462px;
+    z-index: 1;
+    display: flex;
+    align-items: end;
+    justify-content: left;
+  }
+  &__content{
+    width: 585px;
+    height: inherit;
+
+    h1, h2{
+      color: #9c9c9c;
+      font-weight: 400;
+      font-size: 32px;
+
+      b{
+        font-weight: 900;
+        font-size: 82px;
+        font-family: 'Elsie Swash Caps', sans-serif;
+        color: #202020;
+      }
+    }
+    h2{
+      margin-top: 24px;
+    }
+  }
+}
