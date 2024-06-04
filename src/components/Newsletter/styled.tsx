@@ -19,7 +19,7 @@ export const BackgroundPlant = styled.img`
   right: 410px;
 `
 export const NewsletterContainer = styled.div`
-  width: 1203px;
+  width: 1403px;
   height: 462px;
   z-index: 1;
   display: flex;
@@ -27,7 +27,7 @@ export const NewsletterContainer = styled.div`
   justify-content: left;
 `
 export const NewsletterContent = styled.div`
-  width: 585px;
+  width: 685px;
   height: inherit;
 
   h1, h2{
@@ -47,7 +47,7 @@ export const NewsletterContent = styled.div`
   }
 `
 export const InputContainer = styled.div`
-  width: 685px;
+  width: 785px;
   height: 85px;
   background-color: #fff;
   box-shadow: 10px 10px 100px #0000000c;
@@ -57,7 +57,7 @@ export const InputContainer = styled.div`
   margin-top: 37px;
 
   button{
-    width: 25%;
+    width: 30%;
     height: 100%;
     font-size: 22px;
     background-color: #FFCB47;
@@ -67,7 +67,7 @@ export const InputContainer = styled.div`
   }
 `
 export const InputContent = styled.div`
-  width: 75%;
+  width: 70%;
   height: 100%;
   display: flex;
   align-items: center;

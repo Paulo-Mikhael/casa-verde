@@ -11,7 +11,7 @@ export const HeaderBar = styled.header`
   z-index: 1;
 `
 export const HeaderContent = styled.div`
-  width: 1203px;
+  width: 1403px;
   display: flex;
   align-items: center;
   justify-content: space-between;
