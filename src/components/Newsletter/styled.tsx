@@ -46,50 +46,17 @@ export const NewsletterContent = styled.div`
     margin-top: 24px;
   }
 `
-export const InputContainer = styled.div`
-  width: 785px;
-  height: 85px;
-  background-color: #fff;
-  box-shadow: 10px 10px 100px #0000000c;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+export const UserInText = styled.p`
   margin-top: 37px;
+  font-weight: 900;
+  font-size: 32px;
+  font-family: 'Elsie Swash Caps', sans-serif;
+  color: #FFCB47;
+  font-style: italic;
 
-  button{
-    width: 30%;
-    height: 100%;
-    font-size: 22px;
-    background-color: #FFCB47;
-    border: none;
-    cursor: pointer;
-    color: white;
-  }
-`
-export const InputContent = styled.div`
-  width: 70%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  
-  label{
-    cursor: pointer;
-    margin: 0px 20px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  input[type='email']{
-    width: 100%;
-    font-size: 22px;
-    font-weight: 400;
-    padding: 20px;
-    border: none;
-    color: #9c9c9c;
-
-    &:focus{
-      outline: none;
-    }
+  b{
+    font-size: 25px;
+    font-family: inherit;
+    color: #202020;
   }
 `

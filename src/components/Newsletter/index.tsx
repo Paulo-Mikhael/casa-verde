@@ -1,14 +1,18 @@
+import React, { useState } from 'react';
 import { 
   BackgroundSection,
   BackgroundSpot,
   BackgroundPlant,
   NewsletterContainer,
   NewsletterContent,
-  InputContainer,
-  InputContent
+  UserInText,
 } from './styled.tsx';
+import Input from './Input/index.tsx';
 
 export default function Newsletter(){
+  const [userIn, setUserIn] = useState<boolean>(false);
+  const [emailInput, setEmailInput] = useState<string>('');
+
   return (
     <>
       <BackgroundSection>
@@ -29,17 +33,9 @@ export default function Newsletter(){
             <h2>
               Encontre aqui uma vasta seleção de plantas para decorar a sua casa e torná-lo uma pessoa mais feliz no seu dia a dia. Entre com seu e-mail e assine nossa newsletter para saber das novidades da marca.
             </h2>
-            <InputContainer>
-              <InputContent>
-                <label htmlFor="newsletter-input">
-                  <img src="icons/mail.png" alt="ícone de email" />
-                </label>
-                <input type="email" id='newsletter-input' placeholder='Insira seu email'/>
-              </InputContent>
-              <button>
-                Assinar newsletter
-              </button>
-            </InputContainer>
+            {userIn === false ? <Input setUserIn={setUserIn} setEmailInput={setEmailInput} emailInput={emailInput}/> : <UserInText>
+                Obrigado pela assinatura! Você receberá as novidades no email: <b>{emailInput}</b>
+              </UserInText>}
           </NewsletterContent>
         </NewsletterContainer>
       </BackgroundSection>
