@@ -1,20 +1,25 @@
-import styles from './Menu.module.scss';
+import { 
+  HeaderBar,
+  HeaderContent,
+  HeaderImage,
+  NavText
+} from './styled.tsx';
 
 export default function Menu() {
   return (
     <>
-      <header className={styles.headerBar}>
-        <div className={styles.headerBar__content}>
+      <HeaderBar>
+        <HeaderContent>
           <div>
-            <img src="icons/logo.png" alt="logo da empresa" className={styles.headerImage} />
+            <HeaderImage src="icons/logo.png" alt="logo da empresa" />
           </div>
-          <nav className={styles.headerNav}>
-            <p className={styles.navText}>
+          <nav>
+            <NavText>
               Como fazer   /   Ofertas   /   Depoimentos   /   Vídeos   /   Meu Carrinho
-            </p>
+            </NavText>
           </nav>
-        </div>
-      </header>
+        </HeaderContent>
+      </HeaderBar>
     </>
   );
 }
