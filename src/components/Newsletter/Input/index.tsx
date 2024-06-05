@@ -2,11 +2,11 @@ import { InputContent, InputContainer, WarningP } from "./styled.tsx";
 
 interface Props {
   emailInput: string,
-  setEmailInput : React.Dispatch<React.SetStateAction<string>>,
+  setEmailInput: React.Dispatch<React.SetStateAction<string>>,
   setUserIn: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-const Input = ({ emailInput ,setEmailInput, setUserIn }: Props) => {
+const Input = ({ emailInput, setEmailInput, setUserIn }: Props) => {
   const emailDomains = [
     "@gmail.com",
     "@outlook.com",
@@ -26,7 +26,7 @@ const Input = ({ emailInput ,setEmailInput, setUserIn }: Props) => {
   ];
   function verifyEmail(email: string | undefined) {
     if (email) {
-      for (let domain of emailDomains){
+      for (let domain of emailDomains) {
         if (email.endsWith(domain)) {
           if (email.replace(domain, '').length > 0) {
             return true;
@@ -57,7 +57,7 @@ const Input = ({ emailInput ,setEmailInput, setUserIn }: Props) => {
         </InputContent>
         <button
           className={verifyEmail(emailInput) ? '' : 'disabled'}
-          onClick={() => {verifyEmail(emailInput) ? setUserIn(true) : alert('Insira um email')}}
+          onClick={() => { verifyEmail(emailInput) ? setUserIn(true) : alert('Insira um email') }}
         >
           Assinar newsletter
         </button>
