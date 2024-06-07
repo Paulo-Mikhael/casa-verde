@@ -22,7 +22,7 @@ export const StepsImageContainer = styled.div`
 export const ImageContainer = styled.div`
   width: 50%;
   height: 100%;
-  background-image: url('images/plant.png')
+  background-image: url('images/plant.png');
   background-position: center top;
 `
 export const StepsContainer = styled.div`

@@ -30,7 +30,7 @@ export const OffersContent = styled.div`
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   `
-export const OfferDescription = styled.div`
+export const OfferDescription = styled.div<{ imgUrl: string }>`
   width: 100%;
   height: 300px;
   display: flex;
@@ -39,7 +39,7 @@ export const OfferDescription = styled.div`
   span{
     width: 50%;
     height: 100%;
-    background-image: url('images/product-4.png');
+    background-image: url(${props => props.imgUrl});
     background-position: center;
   }
   div{
