@@ -28,7 +28,7 @@ export default function Newsletter(){
           <NewsletterContent>
             <h1>
               Sua casa com as <br/>
-              <b>melhores plantas</b>
+              <b>melhores <br />plantas</b>
             </h1>
             <h2>
               Encontre aqui uma vasta seleção de plantas para decorar a sua casa e torná-lo uma pessoa mais feliz no seu dia a dia. Entre com seu e-mail e assine nossa newsletter para saber das novidades da marca.

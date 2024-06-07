@@ -15,6 +15,10 @@ export const HeaderContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (max-width: 1440px){
+    width: 1203px;
+  }
 `
 export const HeaderImage = styled.img`
   width: 177px;

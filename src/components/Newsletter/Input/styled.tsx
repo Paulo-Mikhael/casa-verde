@@ -24,6 +24,10 @@ export const InputContainer = styled.div`
       cursor: not-allowed;
     }
   }
+  @media screen and (max-width: 1440px){
+    width: 603px;
+    height: 70px;
+  }
 `
 export const InputContent = styled.div`
   width: 70%;
@@ -49,6 +53,9 @@ export const InputContent = styled.div`
 
     &:focus{
       outline: none;
+    }
+    @media screen and (max-width: 1440px){
+      padding: 15px;
     }
   }
 `

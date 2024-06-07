@@ -15,8 +15,13 @@ export const BackgroundSpot = styled.img`
 `
 export const BackgroundPlant = styled.img`
   position: absolute;
+  width: 40%;
   top: 0;
   right: 410px;
+
+  @media screen and (max-width: 1440px){
+    right: 250px;
+  }
 `
 export const NewsletterContainer = styled.div`
   width: 1403px;
@@ -25,6 +30,11 @@ export const NewsletterContainer = styled.div`
   display: flex;
   align-items: end;
   justify-content: left;
+  
+  @media screen and (max-width: 1440px){
+    width: 1203px;
+    height: 332px;
+  }
 `
 export const NewsletterContent = styled.div`
   width: 685px;
@@ -44,6 +54,15 @@ export const NewsletterContent = styled.div`
   }
   h2{
     margin-top: 24px;
+  }
+  @media screen and (max-width: 1440px){
+    h1, h2{
+      font-size: 20px;
+  
+      b{
+        font-size: 52px;
+      }
+    }
   }
 `
 export const UserInText = styled.p`
