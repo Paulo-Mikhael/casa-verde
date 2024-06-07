@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const BackgroundSection = styled.section`
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -39,31 +39,19 @@ export const NewsletterContainer = styled.div`
 export const NewsletterContent = styled.div`
   width: 685px;
   height: inherit;
-
-  h1, h2{
-    color: #9c9c9c;
-    font-weight: 400;
-    font-size: 25px;
-
-    b{
-      font-weight: 900;
-      font-size: 82px;
-      font-family: 'Elsie Swash Caps', sans-serif;
-      color: #202020;
-    }
-  }
+  
   h2{
     margin-top: 24px;
   }
   @media screen and (max-width: 1440px){
-    h1, h2{
-      font-size: 20px;
-  
-      b{
-        font-size: 52px;
-      }
+  h1, h2{
+    font-size: 20px;
+
+    b{
+      font-size: 52px;
     }
   }
+}
 `
 export const UserInText = styled.p`
   margin-top: 37px;
