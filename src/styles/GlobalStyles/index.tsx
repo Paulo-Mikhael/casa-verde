@@ -13,8 +13,6 @@ export const GlobalStyles = createGlobalStyle`
   h1, h2, h3{
     color: #9c9c9c;
     font-weight: 400;
-  }
-  h1, h2{
     font-size: 25px;
 
     b{

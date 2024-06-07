@@ -8,7 +8,7 @@ export const BackgroundSection = styled.section`
   justify-content: center;
 `
 export const StepsImageContainer = styled.div`
-  width: 1300px;
+  width: 1500px;
   height: 100%;
   background-color: white;
   z-index: 1;

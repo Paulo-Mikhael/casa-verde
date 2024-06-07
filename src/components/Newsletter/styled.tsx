@@ -58,8 +58,9 @@ export const UserInText = styled.p`
   font-weight: 900;
   font-size: 32px;
   font-family: 'Elsie Swash Caps', sans-serif;
-  color: #FFCB47;
+  color: #c08d0d;
   font-style: italic;
+  text-shadow: 0px 0px 10px #c08d0d;
 
   b{
     font-size: 25px;

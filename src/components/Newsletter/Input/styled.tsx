@@ -16,6 +16,7 @@ export const InputContainer = styled.div`
     font-size: 22px;
     background-color: #FFCB47;
     border: none;
+    box-shadow: 10px 10px 100px #c08d0d;
     cursor: pointer;
     color: white;
 
@@ -56,11 +57,16 @@ export const InputContent = styled.div`
     }
     @media screen and (max-width: 1440px){
       padding: 15px;
+      font-size: 18px;
     }
-  }
-`
+    }
+    `
 export const WarningP = styled.p`
   color: red;
   font-size: 25px;
   margin-top: 20px;
+  
+  @media screen and (max-width: 1440px){
+    font-size: 18px;
+  }
 `
