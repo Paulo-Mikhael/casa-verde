@@ -19,6 +19,9 @@ export const OffersContainer = styled.div`
   h2{
     text-align: center;
   }
+  @media screen and (max-width: 1440px){
+    width: 1300px;
+  }
 `
 export const OffersContent = styled.div`
   width: 100%;
@@ -55,9 +58,14 @@ export const OfferDescription = styled.div`
       color: #FFCB47;
       font-size: 25px;
       cursor: pointer;
-      
+
       i{
         margin-right: 10px;
+      }
+    }
+    @media screen and (max-width: 1440px){
+      b{
+        font-size: 40px;
       }
     }
   }

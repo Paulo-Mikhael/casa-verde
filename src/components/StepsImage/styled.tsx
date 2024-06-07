@@ -14,11 +14,15 @@ export const StepsImageContainer = styled.div`
   z-index: 1;
   box-shadow: 0px 2px 10px #00000022;
   display: flex; 
+
+  @media screen and (max-width: 1440px){
+    width: 1300px;
+  }
 `
 export const ImageContainer = styled.div`
   width: 50%;
   height: 100%;
-  background-image: url('images/plant.png');
+  background-image: url('images/plant.png')
   background-position: center top;
 `
 export const StepsContainer = styled.div`
