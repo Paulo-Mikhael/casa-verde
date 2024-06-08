@@ -7,11 +7,12 @@ import IProduct from '../../interfaces/IProduct.ts';
 export default function Offers() {
   const [products, setProducts] = useState<IProduct[]>([]);
   const [showedProducts, setShowedProducts] = useState<IProduct[]>([]);
-  const [filter, setFilter] = useState('');
-
+  const [filter, setFilter] = useState<string | null>(null);
+  const [maxNumberFilter, setMaxNumberFilter] = useState<string>('');
+  const [minNumberFilter, setMinNumberFilter] = useState<string>('');
+  
   function FilterProducts(filterRequest: string | null){
     const filteredProducts: IProduct[] = [...products];
-
     if (filterRequest === 'ascending'){
       setShowedProducts(filteredProducts.sort((a, b) => b.preco - a.preco));
       setFilter('ascending');
@@ -19,28 +20,34 @@ export default function Offers() {
     if (filterRequest === 'descending'){
       setShowedProducts(filteredProducts.sort((a, b) => a.preco - b.preco));
       setFilter('descending');
-      }
-      if (filterRequest === null){
-        setShowedProducts(products);
-        setFilter('');
     }
-
-    console.log(filter);
-  }
-
-  function AddProduct(){
-    https.post<IProduct>('plantas', {
-      name: 'Planta Teste',
-      preco: 40,
-      img: 'images01/planta01-card.png',
-      ordem: 51
-    })
-    .then(resposta => console.log(resposta))
-    .catch(err => console.log(err));
+    if (filterRequest === 'filtering'){
+      setFilter('filtering');
+    }else{
+      setMaxNumberFilter('');
+      setMinNumberFilter('');
+    }
+    if (filterRequest === null){
+      setShowedProducts(products);
+      setFilter('');
+    }
   }
 
   useEffect(() => {
-      https.get<IProduct[]>('plantas').then(resposta => setProducts(resposta.data)).catch(err => console.log(err));
+    if (Number(minNumberFilter) === 0){
+      setShowedProducts(products);
+      }
+      else{
+      setShowedProducts(products.filter(product => 
+        product.preco >= Number(maxNumberFilter) && 
+        product.preco < Number(minNumberFilter)
+      ));
+      setFilter('filtering');
+    }
+  }, [maxNumberFilter, minNumberFilter]);
+
+  useEffect(() => {
+      https.get<IProduct[]>('').then(resposta => setProducts(resposta.data)).catch(err => console.log(err));
     }, []);
     useEffect(() => {
       setShowedProducts(products);
@@ -57,17 +64,40 @@ export default function Offers() {
             onClick={() => {filter === 'ascending' ? FilterProducts(null) : FilterProducts('ascending')}}
             className={filter === 'ascending' ? 'activated' : ''}
           >
-            R$ <i className="fa-solid fa-arrow-up"></i>
+            Maior R$ <i className="fa-solid fa-arrow-up"></i>
           </button>
           <button 
             onClick={() => {filter === 'descending' ? FilterProducts(null) : FilterProducts('descending')}}
             className={filter === 'descending' ? 'activated' : ''}
           >
-            R$ <i className="fa-solid fa-arrow-down"></i>
+            Menor R$ <i className="fa-solid fa-arrow-down"></i>
           </button>
-          <button onClick={() => AddProduct()}>
+          <button 
+            className={filter === 'filtering' ? 'activated' : ''}  
+          >
             <i className="fa-solid fa-filter"></i>
+            <input 
+              value={minNumberFilter}
+              onChange={(evt) => {
+                setMinNumberFilter(evt.target.value);
+              }} 
+              placeholder='De' 
+              type="number" 
+              name="minNumber" 
+              id="minNumber" 
+            />
+            <input 
+              value={maxNumberFilter}
+              onChange={(evt) => {
+                setMaxNumberFilter(evt.target.value);
+              }} 
+              placeholder='Até' 
+              type="number" 
+              name="maxNumber" 
+              id="maxNumber" 
+            />
           </button>
+          <div className={`x ${filter === 'filtering' ? '' : 'hidden'}`} onClick={() => FilterProducts(null)}></div>
         </ButtonsContainer>
         <OffersContent>
           {showedProducts.map((item, index) => (

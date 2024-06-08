@@ -78,6 +78,9 @@ export const ButtonsContainer = styled.div`
   align-items: end;
   margin-bottom: 10px;
   
+  button:hover, div:hover{
+    background-color: #c08d0d;
+  }
   button{
     height: 40px;
     padding: 10px;
@@ -90,9 +93,52 @@ export const ButtonsContainer = styled.div`
     justify-content: center;
     gap: 10px;
     cursor: pointer;
+    position: relative;
 
     &.activated{
-      background-color: #1cfd55;
+      background-color: #1cfd55 !important;
+    }
+    &:nth-child(3):hover{
+      background-color: #FFCB47;
+    }
+    input{
+      border: none;
+      background-color: #f1b10d;
+      padding: 5px 10px;
+      color: white;
+      width: 50px;
+
+      &:focus{
+        outline: none;
+      }
+    }
+  }
+  .x {
+    width: 40px;
+    height: 40px;
+    background-color: #FFCB47;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:after {
+      content: '';
+      height: 35px;
+      border-left: 3px solid #fff;
+      position: absolute;
+      transform: rotate(45deg);
+    }
+    &:before {
+      content: '';
+      height: 35px;
+      border-left: 3px solid #fff;
+      position: absolute;
+      transform: rotate(-45deg);
+    }
+    &.hidden{
+      display: none !important;
     }
   }
 `
