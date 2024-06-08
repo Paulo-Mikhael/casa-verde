@@ -28,8 +28,19 @@ export default function Offers() {
     console.log(filter);
   }
 
+  function AddProduct(){
+    https.post<IProduct>('plantas', {
+      name: 'Planta Teste',
+      preco: 40,
+      img: 'images01/planta01-card.png',
+      ordem: 51
+    })
+    .then(resposta => console.log(resposta))
+    .catch(err => console.log(err));
+  }
+
   useEffect(() => {
-      https.get<IProduct[]>('').then(resposta => setProducts(resposta.data)).catch(err => console.log(err));
+      https.get<IProduct[]>('plantas').then(resposta => setProducts(resposta.data)).catch(err => console.log(err));
     }, []);
     useEffect(() => {
       setShowedProducts(products);
@@ -54,7 +65,7 @@ export default function Offers() {
           >
             R$ <i className="fa-solid fa-arrow-down"></i>
           </button>
-          <button>
+          <button onClick={() => AddProduct()}>
             <i className="fa-solid fa-filter"></i>
           </button>
         </ButtonsContainer>

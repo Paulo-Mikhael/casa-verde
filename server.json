@@ -1,53 +1,304 @@
-[
-  { "name": "Samambaia", "preco": 15.00, "img": "images/samambaia_01card.png", "ordem": 0 },
-  { "name": "Jiboia", "preco": 12.00, "img": "images/jiboia_01card.png", "ordem": 1 },
-  { "name": "Planta-cobra", "preco": 18.00, "img": "images/planta-cobra_01card.png", "ordem": 2 },
-  { "name": "Cacto", "preco": 8.00, "img": "images/cacto_01card.png", "ordem": 3 },
-  { "name": "Babosa", "preco": 10.00, "img": "images/babosa_01card.png", "ordem": 4 },
-  { "name": "Violeta", "preco": 12.00, "img": "images/violeta_01card.png", "ordem": 5 },
-  { "name": "Orquídea", "preco": 25.00, "img": "images/orquidea_01card.png", "ordem": 6 },
-  { "name": "Lírio", "preco": 15.00, "img": "images/lirio_01card.png", "ordem": 7 },
-  { "name": "Rosa", "preco": 18.00, "img": "images/rosa_01card.png", "ordem": 8 },
-  { "name": "Girassol", "preco": 10.00, "img": "images/girassol_01card.png", "ordem": 9 },
-  { "name": "Hibisco", "preco": 12.00, "img": "images/hibisco_01card.png", "ordem": 10 },
-  { "name": "Lavanda", "preco": 15.00, "img": "images/lavanda_01card.png", "ordem": 11 },
-  { "name": "Manjericão", "preco": 8.00, "img": "images/manjericao_01card.png", "ordem": 12 },
-  { "name": "Alecrim", "preco": 10.00, "img": "images/alecrim_01card.png", "ordem": 13 },
-  { "name": "Hortelã", "preco": 6.00, "img": "images/hortela_01card.png", "ordem": 14 },
-  { "name": "Coentro", "preco": 5.00, "img": "images/coentro_01card.png", "ordem": 15 },
-  { "name": "Pimenta", "preco": 7.00, "img": "images/pimenta_01card.png", "ordem": 16 },
-  { "name": "Tomate Cereja", "preco": 12.00, "img": "images/tomate cereja_01card.png", "ordem": 17 },
-  { "name": "Alface", "preco": 8.00, "img": "images/alface_01card.png", "ordem": 18 },
-  { "name": "Couve", "preco": 10.00, "img": "images/couve_01card.png", "ordem": 19 },
-  { "name": "Espinafre", "preco": 7.00, "img": "images/espinafre_01card.png", "ordem": 20 },
-  { "name": "Brócolis", "preco": 15.00, "img": "images/brocolis_01card.png", "ordem": 21 },
-  { "name": "Couve-flor", "preco": 12.00, "img": "images/couve-flor_01card.png", "ordem": 22 },
-  { "name": "Cenoura", "preco": 6.00, "img": "images/cenoura_01card.png", "ordem": 23 },
-  { "name": "Batata", "preco": 5.00, "img": "images/batata_01card.png", "ordem": 24 },
-  { "name": "Cebola", "preco": 4.00, "img": "images/cebola_01card.png", "ordem": 25 },
-  { "name": "Acelga", "preco": 7.00, "img": "images/acelga_01card.png", "ordem": 26 },
-  { "name": "Rabanetes", "preco": 6.00, "img": "images/rabanetes_01card.png", "ordem": 27 },
-  { "name": "Ervilha", "preco": 8.00, "img": "images/ervilha_01card.png", "ordem": 28 },
-  { "name": "Feijão", "preco": 10.00, "img": "images/feijao_01card.png", "ordem": 29 },
-  { "name": "Abobrinha", "preco": 9.00, "img": "images/abobrinha_01card.png", "ordem": 30 },
-  { "name": "Chuchu", "preco": 7.00, "img": "images/chuchu_01card.png", "ordem": 31 },
-  { "name": "Berinjela", "preco": 12.00, "img": "images/berinjela_01card.png", "ordem": 32 },
-  { "name": "Pimentão", "preco": 10.00, "img": "images/pimentao_01card.png", "ordem": 33 },
-  { "name": "Abóbora", "preco": 8.00, "img": "images/abobora_01card.png", "ordem": 34 },
-  { "name": "Melancia", "preco": 15.00, "img": "images/melancia_01card.png", "ordem": 35 },
-  { "name": "Melão", "preco": 12.00, "img": "images/melao_01card.png", "ordem": 36 },
-  { "name": "Morango", "preco": 18.00, "img": "images/morango_01card.png", "ordem": 37 },
-  { "name": "Uva", "preco": 10.00, "img": "images/uva_01card.png", "ordem": 38 },
-  { "name": "Maçã", "preco": 7.00, "img": "images/maca_01card.png", "ordem": 39 },
-  { "name": "Pêra", "preco": 8.00, "img": "images/pera_01card.png", "ordem": 40 },
-  { "name": "Laranja", "preco": 6.00, "img": "images/laranja_01card.png", "ordem": 41 },
-  { "name": "Limão", "preco": 5.00, "img": "images/limao_01card.png", "ordem": 42 },
-  { "name": "Banana", "preco": 4.00, "img": "images/banana_01card.png", "ordem": 43 },
-  { "name": "Manga", "preco": 9.00, "img": "images/manga_01card.png", "ordem": 44 },
-  { "name": "Abacaxi", "preco": 11.00, "img": "images/abacaxi_01card.png", "ordem": 45 },
-  { "name": "Coco", "preco": 12.00, "img": "images/coco_01card.png", "ordem": 46 },
-  { "name": "Goiaba", "preco": 8.00, "img": "images/goiaba_01card.png", "ordem": 47 },
-  { "name": "Jaboticaba", "preco": 10.00, "img": "images/jaboticaba_01card.png", "ordem": 48 },
-  { "name": "Acerola", "preco": 7.00, "img": "images/acerola_01card.png", "ordem": 49 },
-  { "name": "Cupuaçu", "preco": 15.00, "img": "images/cupuacu_01card.png", "ordem": 50 }
-]
+{
+  "plantas": [
+    {
+      "name": "Jiboia",
+      "preco": 12,
+      "img": "images/jiboia_01card.png",
+      "ordem": 1
+    },
+    {
+      "name": "Planta-cobra",
+      "preco": 18,
+      "img": "images/planta-cobra_01card.png",
+      "ordem": 2
+    },
+    {
+      "name": "Cacto",
+      "preco": 8,
+      "img": "images/cacto_01card.png",
+      "ordem": 3
+    },
+    {
+      "name": "Babosa",
+      "preco": 10,
+      "img": "images/babosa_01card.png",
+      "ordem": 4
+    },
+    {
+      "name": "Violeta",
+      "preco": 12,
+      "img": "images/violeta_01card.png",
+      "ordem": 5
+    },
+    {
+      "name": "Orquídea",
+      "preco": 25,
+      "img": "images/orquidea_01card.png",
+      "ordem": 6
+    },
+    {
+      "name": "Lírio",
+      "preco": 15,
+      "img": "images/lirio_01card.png",
+      "ordem": 7
+    },
+    {
+      "name": "Rosa",
+      "preco": 18,
+      "img": "images/rosa_01card.png",
+      "ordem": 8
+    },
+    {
+      "name": "Girassol",
+      "preco": 10,
+      "img": "images/girassol_01card.png",
+      "ordem": 9
+    },
+    {
+      "name": "Hibisco",
+      "preco": 12,
+      "img": "images/hibisco_01card.png",
+      "ordem": 10
+    },
+    {
+      "name": "Lavanda",
+      "preco": 15,
+      "img": "images/lavanda_01card.png",
+      "ordem": 11
+    },
+    {
+      "name": "Manjericão",
+      "preco": 8,
+      "img": "images/manjericao_01card.png",
+      "ordem": 12
+    },
+    {
+      "name": "Alecrim",
+      "preco": 10,
+      "img": "images/alecrim_01card.png",
+      "ordem": 13
+    },
+    {
+      "name": "Hortelã",
+      "preco": 6,
+      "img": "images/hortela_01card.png",
+      "ordem": 14
+    },
+    {
+      "name": "Coentro",
+      "preco": 5,
+      "img": "images/coentro_01card.png",
+      "ordem": 15
+    },
+    {
+      "name": "Pimenta",
+      "preco": 7,
+      "img": "images/pimenta_01card.png",
+      "ordem": 16
+    },
+    {
+      "name": "Tomate Cereja",
+      "preco": 12,
+      "img": "images/tomate cereja_01card.png",
+      "ordem": 17
+    },
+    {
+      "name": "Alface",
+      "preco": 8,
+      "img": "images/alface_01card.png",
+      "ordem": 18
+    },
+    {
+      "name": "Couve",
+      "preco": 10,
+      "img": "images/couve_01card.png",
+      "ordem": 19
+    },
+    {
+      "name": "Espinafre",
+      "preco": 7,
+      "img": "images/espinafre_01card.png",
+      "ordem": 20
+    },
+    {
+      "name": "Brócolis",
+      "preco": 15,
+      "img": "images/brocolis_01card.png",
+      "ordem": 21
+    },
+    {
+      "name": "Couve-flor",
+      "preco": 12,
+      "img": "images/couve-flor_01card.png",
+      "ordem": 22
+    },
+    {
+      "name": "Cenoura",
+      "preco": 6,
+      "img": "images/cenoura_01card.png",
+      "ordem": 23
+    },
+    {
+      "name": "Batata",
+      "preco": 5,
+      "img": "images/batata_01card.png",
+      "ordem": 24
+    },
+    {
+      "name": "Cebola",
+      "preco": 4,
+      "img": "images/cebola_01card.png",
+      "ordem": 25
+    },
+    {
+      "name": "Acelga",
+      "preco": 7,
+      "img": "images/acelga_01card.png",
+      "ordem": 26
+    },
+    {
+      "name": "Rabanetes",
+      "preco": 6,
+      "img": "images/rabanetes_01card.png",
+      "ordem": 27
+    },
+    {
+      "name": "Ervilha",
+      "preco": 8,
+      "img": "images/ervilha_01card.png",
+      "ordem": 28
+    },
+    {
+      "name": "Feijão",
+      "preco": 10,
+      "img": "images/feijao_01card.png",
+      "ordem": 29
+    },
+    {
+      "name": "Abobrinha",
+      "preco": 9,
+      "img": "images/abobrinha_01card.png",
+      "ordem": 30
+    },
+    {
+      "name": "Chuchu",
+      "preco": 7,
+      "img": "images/chuchu_01card.png",
+      "ordem": 31
+    },
+    {
+      "name": "Berinjela",
+      "preco": 12,
+      "img": "images/berinjela_01card.png",
+      "ordem": 32
+    },
+    {
+      "name": "Pimentão",
+      "preco": 10,
+      "img": "images/pimentao_01card.png",
+      "ordem": 33
+    },
+    {
+      "name": "Abóbora",
+      "preco": 8,
+      "img": "images/abobora_01card.png",
+      "ordem": 34
+    },
+    {
+      "name": "Melancia",
+      "preco": 15,
+      "img": "images/melancia_01card.png",
+      "ordem": 35
+    },
+    {
+      "name": "Melão",
+      "preco": 12,
+      "img": "images/melao_01card.png",
+      "ordem": 36
+    },
+    {
+      "name": "Morango",
+      "preco": 18,
+      "img": "images/morango_01card.png",
+      "ordem": 37
+    },
+    {
+      "name": "Uva",
+      "preco": 10,
+      "img": "images/uva_01card.png",
+      "ordem": 38
+    },
+    {
+      "name": "Maçã",
+      "preco": 7,
+      "img": "images/maca_01card.png",
+      "ordem": 39
+    },
+    {
+      "name": "Pêra",
+      "preco": 8,
+      "img": "images/pera_01card.png",
+      "ordem": 40
+    },
+    {
+      "name": "Laranja",
+      "preco": 6,
+      "img": "images/laranja_01card.png",
+      "ordem": 41
+    },
+    {
+      "name": "Limão",
+      "preco": 5,
+      "img": "images/limao_01card.png",
+      "ordem": 42
+    },
+    {
+      "name": "Banana",
+      "preco": 4,
+      "img": "images/banana_01card.png",
+      "ordem": 43
+    },
+    {
+      "name": "Manga",
+      "preco": 9,
+      "img": "images/manga_01card.png",
+      "ordem": 44
+    },
+    {
+      "name": "Abacaxi",
+      "preco": 11,
+      "img": "images/abacaxi_01card.png",
+      "ordem": 45
+    },
+    {
+      "name": "Coco",
+      "preco": 12,
+      "img": "images/coco_01card.png",
+      "ordem": 46
+    },
+    {
+      "name": "Goiaba",
+      "preco": 8,
+      "img": "images/goiaba_01card.png",
+      "ordem": 47
+    },
+    {
+      "name": "Jaboticaba",
+      "preco": 10,
+      "img": "images/jaboticaba_01card.png",
+      "ordem": 48
+    },
+    {
+      "name": "Acerola",
+      "preco": 7,
+      "img": "images/acerola_01card.png",
+      "ordem": 49
+    },
+    {
+      "name": "Cupuaçu",
+      "preco": 15,
+      "img": "images/cupuacu_01card.png",
+      "ordem": 50
+    }
+  ]
+}
