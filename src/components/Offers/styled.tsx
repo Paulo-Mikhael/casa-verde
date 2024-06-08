@@ -29,8 +29,8 @@ export const OffersContent = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  `
-export const OfferDescription = styled.div<{ imgUrl: string }>`
+`
+export const OfferDescription = styled.div<{ $imgUrl: string }>`
   width: 100%;
   height: 300px;
   display: flex;
@@ -39,7 +39,7 @@ export const OfferDescription = styled.div<{ imgUrl: string }>`
   span{
     width: 50%;
     height: 100%;
-    background-image: url(${props => props.imgUrl});
+    background-image: url(${props => props.$imgUrl});
     background-position: center;
   }
   div{
@@ -67,6 +67,32 @@ export const OfferDescription = styled.div<{ imgUrl: string }>`
       b{
         font-size: 40px;
       }
+    }
+  }
+`
+export const ButtonsContainer = styled.div`
+  width: 100%;
+  height: 70px;
+  display: flex;
+  gap: 10px;
+  align-items: end;
+  margin-bottom: 10px;
+  
+  button{
+    height: 40px;
+    padding: 10px;
+    border: none;
+    background-color: #FFCB47;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+
+    &.activated{
+      background-color: #1cfd55;
     }
   }
 `
