@@ -34,13 +34,14 @@ export default function Offers() {
   }
 
   useEffect(() => {
-    if (Number(minNumberFilter) === 0){
+    if (Number(minNumberFilter) <= 0 || Number(maxNumberFilter) <= 0 || Number(maxNumberFilter) < Number(minNumberFilter)){
       setShowedProducts(products);
-      }
-      else{
+      setFilter(null);
+    }
+    else{
       setShowedProducts(products.filter(product => 
-        product.preco >= Number(maxNumberFilter) && 
-        product.preco < Number(minNumberFilter)
+        product.preco <= Number(maxNumberFilter) && 
+        product.preco >= Number(minNumberFilter)
       ));
       setFilter('filtering');
     }
