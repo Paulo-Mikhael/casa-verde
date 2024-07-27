@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { http } from '../../https';
+import https from '../../https/index.ts';
 import './styled.tsx';
 import { BackgroundSection, ButtonsContainer, OfferDescription, OffersContainer, OffersContent } from './styled.tsx';
 import IProduct from '../../interfaces/IProduct.ts';
@@ -8,8 +8,8 @@ export default function Offers() {
   const [products, setProducts] = useState<IProduct[]>([]);
   const [showedProducts, setShowedProducts] = useState<IProduct[]>([]);
   const [filter, setFilter] = useState<string | null>(null);
-  const [maxNumberFilter, setMaxNumberFilter] = useState<string>('0');
-  const [minNumberFilter, setMinNumberFilter] = useState<string>('0');
+  const [maxNumberFilter, setMaxNumberFilter] = useState<string>('');
+  const [minNumberFilter, setMinNumberFilter] = useState<string>('');
   
   function FilterProducts(filterRequest: string | null){
     const filteredProducts: IProduct[] = [...products];
@@ -48,7 +48,7 @@ export default function Offers() {
   }, [maxNumberFilter, minNumberFilter]);
 
   useEffect(() => {
-      http.get<IProduct[]>('').then(resposta => setProducts(resposta.data)).catch(err => console.log(err));
+      https.get<IProduct[]>('').then(resposta => setProducts(resposta.data)).catch(err => console.log(err));
     }, []);
     useEffect(() => {
       setShowedProducts(products);
